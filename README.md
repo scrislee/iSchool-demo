@@ -1,4 +1,13 @@
 # iSchool-demo
 iSchool interview April 2025
 
-Use beer data provided by PJG
+TCB-Brew-Data
+Data provided by Patrick Gibson from Tidal Creek Brewery
+
+brand
+bba = Breezy Blonde Ale
+bri = Beam Reach IPA
+hh = Harmonic Hefeweizen
+
+TCB-Target-Specs
+Goal specifications for each brand
