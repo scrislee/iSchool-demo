@@ -25,7 +25,33 @@ package.check <- lapply(
 # Check for updates
 tidyverse_update()
 
-# Read in data
+
+# Read in birthweight data 2023 us territories (not 50 states)
+birth_data <-read_csv("data/natality2023ps.csv")
+
+# We care about dbwt, which is Birth Weight – Detail in Grams (Edited)
+birth_data %>%
+  select(dbwt)
+
+# Quick look data
+birth_data %>%
+  select(dbwt)%>%
+  summary()
+
+# Histogram
+ggplot(birth_data)+
+  geom_histogram(aes(dbwt), binwidth = 100)
+
+ggplot(data = birth_data, aes(x = dbwt)) + 
+  geom_histogram(fill = "firebrick",  binwidth = 50, 
+                 boundary = 0, closed = "left") + 
+  labs(x = "Birth weight (g)", y = "Number of babies") + 
+  theme_classic()
+
+# Calculate mean and standard deviation
+
+
+# Read in beer data
 data <- read_csv("data/TCB-Brew-Data.csv",
                           col_types = cols(batch_start = col_datetime(format = "%Y-%m-%d %H:%M:%S")))
 
