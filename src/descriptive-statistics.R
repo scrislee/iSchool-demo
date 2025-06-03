@@ -119,7 +119,7 @@ birth_data %>%
 # Compare normal distribution and t-distribution
 # Plot both distributions
 # Define x-axis values
-x_values <- seq(-5, 5, length.out = 100)
+x_values <- seq(-4, 4, length.out = 100)
 
 # Create data frame for plotting
 data <- data.frame(x = x_values)
@@ -132,10 +132,9 @@ ggplot(data, aes(x = x)) +
   # Normal distribution
   stat_function(fun = dnorm, args = list(mean = 0, sd = 1),
                 aes(color = "Normal"), lwd = 1) +
-  labs(title = "Student's t vs. Normal Distribution",
-       x = "t or Z", y = "Probability ensity") +
+  labs(x = "t or Z", y = "Probability density") +
   scale_color_manual(values = c("Student's t" = "blue", "Normal" = "firebrick")) +
-  theme_classic()
+  theme_classic(base_size = 20)
 
 
 # Read in beer data
