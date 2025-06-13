@@ -4,6 +4,9 @@
 rm(list = ls())
 # In RStudio, Environment tab should show Environment is empty
 
+# Install the "devtools" package
+install.packages("devtools")
+
 # Install the “remotes” package 
 install.packages("remotes")
 
@@ -16,3 +19,6 @@ remotes::install_github("agmath/AppliedStatsInteractive")
 
 # Install Colin Rundel's learnrhash package
 remotes::install_github("rundel/learnrhash")
+
+# Install the tidyverse and update it
+
