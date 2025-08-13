@@ -24,7 +24,7 @@ package.check <- lapply(
 )
 
 # Check for updates
-tidyverse_update()
+# tidyverse_update()
 
 
 # Read in birthweight data 2023 us territories (not 50 states)

@@ -20,5 +20,15 @@ remotes::install_github("agmath/AppliedStatsInteractive")
 # Install Colin Rundel's learnrhash package
 remotes::install_github("rundel/learnrhash")
 
-# Install the tidyverse and update it
+# Install the "tidyverse" package
+install.packages("tidyverse")
 
+# Install "skimr" and "ggmosaic"
+install.packages("skimr")
+install.packages("ggmosaic")
+# You will receive the following prompt: Would you like to use a personal 
+# library instead? (yes/No/cancel) 
+# Type yes into the console and hit return
+
+# Install "statsr"
+install.packages("statsr")
